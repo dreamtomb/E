@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db-ssm@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db-ssm">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="document"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="php100"/>
+    <schema id="8" parent="1" name="phpmyadmin"/>
+    <schema id="9" parent="1" name="whut_database"/>
+    <table id="10" parent="2" name="admin"/>
+    <table id="11" parent="2" name="t_classinfo"/>
+    <table id="12" parent="2" name="t_collegeinfo"/>
+    <table id="13" parent="2" name="t_courseinfo_qq254540457"/>
+    <table id="14" parent="2" name="t_news"/>
+    <table id="15" parent="2" name="t_scoreinfo"/>
+    <table id="16" parent="2" name="t_specialfieldinfo"/>
+    <table id="17" parent="2" name="t_student_qq287307421"/>
+    <table id="18" parent="2" name="t_studentselectcourseinfo"/>
+    <table id="19" parent="2" name="t_teacher_qq287307421"/>
+    <table id="20" parent="2" name="user"/>
+    <column id="21" parent="10" name="username">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="10" name="password">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="23" parent="10" name="PRIMARY">
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="11" name="classNumber">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="11" name="className">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="26" parent="11" name="classSpecialFieldNumber">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="27" parent="11" name="classBirthDate">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="28" parent="11" name="classTeacherCharge">
+      <Position>5</Position>
+      <DataType>varchar(12)|0</DataType>
+    </column>
+    <column id="29" parent="11" name="classTelephone">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="30" parent="11" name="classMemo">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <index id="31" parent="11" name="FK95BB201BA924E03B">
+      <ColNames>classSpecialFieldNumber</ColNames>
+    </index>
+    <key id="32" parent="11" name="PRIMARY">
+      <ColNames>classNumber</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="33" parent="11" name="FK95BB201BA924E03B">
+      <ColNames>classSpecialFieldNumber</ColNames>
+      <RefSchemaName>db-ssm</RefSchemaName>
+      <RefTableName>t_specialfieldinfo</RefTableName>
+      <RefColNames>specialFieldNumber</RefColNames>
+    </foreign-key>
+    <column id="34" parent="12" name="collegeNumber">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="12" name="collegeName">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="36" parent="12" name="collegeBirthDate">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="37" parent="12" name="collegeMan">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="38" parent="12" name="collegeTelephone">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="39" parent="12" name="collegeMemo">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="40" parent="12" name="PRIMARY">
+      <ColNames>collegeNumber</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="41" parent="13" name="courseNumber">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="13" name="courseName">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="43" parent="13" name="courseTeacher">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="44" parent="13" name="courseTime">
+      <Position>4</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="45" parent="13" name="coursePlace">
+      <Position>5</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="46" parent="13" name="courseScore">
+      <Position>6</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="47" parent="13" name="courseMemo">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <index id="48" parent="13" name="FK258A9AAB4FB4E18A">
+      <ColNames>courseTeacher</ColNames>
+    </index>
+    <key id="49" parent="13" name="PRIMARY">
+      <ColNames>courseNumber</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="50" parent="13" name="FK258A9AAB4FB4E18A">
+      <ColNames>courseTeacher</ColNames>
+      <RefSchemaName>db-ssm</RefSchemaName>
+      <RefTableName>t_teacher_qq287307421</RefTableName>
+      <RefColNames>teacherNumber</RefColNames>
+    </foreign-key>
+    <column id="51" parent="14" name="newsId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="52" parent="14" name="newsTitle">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="53" parent="14" name="newsContent">
+      <Position>3</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="54" parent="14" name="newsDate">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="55" parent="14" name="newsPhoto">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="56" parent="14" name="PRIMARY">
+      <ColNames>newsId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="15" name="scoreId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="15" name="studentNumber">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="59" parent="15" name="courseNumber">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="60" parent="15" name="scoreValue">
+      <Position>4</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="61" parent="15" name="studentEvaluate">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <index id="62" parent="15" name="FK1534983543F8B840">
+      <ColNames>studentNumber</ColNames>
+    </index>
+    <index id="63" parent="15" name="FK15349835CBB4EC4E">
+      <ColNames>courseNumber</ColNames>
+    </index>
+    <key id="64" parent="15" name="PRIMARY">
+      <ColNames>scoreId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="65" parent="15" name="FK1534983543F8B840">
+      <ColNames>studentNumber</ColNames>
+      <RefSchemaName>db-ssm</RefSchemaName>
+      <RefTableName>t_student_qq287307421</RefTableName>
+      <RefColNames>studentNumber</RefColNames>
+    </foreign-key>
+    <foreign-key id="66" parent="15" name="FK15349835CBB4EC4E">
+      <ColNames>courseNumber</ColNames>
+      <RefSchemaName>db-ssm</RefSchemaName>
+      <RefTableName>t_courseinfo_qq254540457</RefTableName>
+      <RefColNames>courseNumber</RefColNames>
+    </foreign-key>
+    <column id="67" parent="16" name="specialFieldNumber">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="16" name="specialFieldName">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="69" parent="16" name="specialCollegeNumber">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="70" parent="16" name="specialBirthDate">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="71" parent="16" name="specialMan">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="72" parent="16" name="specialTelephone">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="73" parent="16" name="specialMemo">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <index id="74" parent="16" name="FK30F0289A6AE335E2">
+      <ColNames>specialCollegeNumber</ColNames>
+    </index>
+    <key id="75" parent="16" name="PRIMARY">
+      <ColNames>specialFieldNumber</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="76" parent="16" name="FK30F0289A6AE335E2">
+      <ColNames>specialCollegeNumber</ColNames>
+      <RefSchemaName>db-ssm</RefSchemaName>
+      <RefTableName>t_collegeinfo</RefTableName>
+      <RefColNames>collegeNumber</RefColNames>
+    </foreign-key>
+    <column id="77" parent="17" name="studentNumber">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="17" name="studentName">
+      <Position>2</Position>
+      <DataType>varchar(12)|0</DataType>
+    </column>
+    <column id="79" parent="17" name="studentPassword">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="80" parent="17" name="studentSex">
+      <Position>4</Position>
+      <DataType>varchar(2)|0</DataType>
+    </column>
+    <column id="81" parent="17" name="studentClassNumber">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="82" parent="17" name="studentBirthday">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="83" parent="17" name="studentState">
+      <Position>7</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="84" parent="17" name="studentPhoto">
+      <Position>8</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="85" parent="17" name="studentTelephone">
+      <Position>9</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="86" parent="17" name="studentEmail">
+      <Position>10</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="87" parent="17" name="studentQQ">
+      <Position>11</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="88" parent="17" name="studentAddress">
+      <Position>12</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="89" parent="17" name="studentMemo">
+      <Position>13</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <index id="90" parent="17" name="FKA1F0E11B97DC0CE2">
+      <ColNames>studentClassNumber</ColNames>
+    </index>
+    <key id="91" parent="17" name="PRIMARY">
+      <ColNames>studentNumber</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="92" parent="17" name="FKA1F0E11B97DC0CE2">
+      <ColNames>studentClassNumber</ColNames>
+      <RefSchemaName>db-ssm</RefSchemaName>
+      <RefTableName>t_classinfo</RefTableName>
+      <RefColNames>classNumber</RefColNames>
+    </foreign-key>
+    <column id="93" parent="18" name="selectId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="94" parent="18" name="studentNumber">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="95" parent="18" name="courseNumber">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <index id="96" parent="18" name="FK47DAEAF543F8B840">
+      <ColNames>studentNumber</ColNames>
+    </index>
+    <index id="97" parent="18" name="FK47DAEAF5CBB4EC4E">
+      <ColNames>courseNumber</ColNames>
+    </index>
+    <key id="98" parent="18" name="PRIMARY">
+      <ColNames>selectId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="99" parent="18" name="FK47DAEAF543F8B840">
+      <ColNames>studentNumber</ColNames>
+      <RefSchemaName>db-ssm</RefSchemaName>
+      <RefTableName>t_student_qq287307421</RefTableName>
+      <RefColNames>studentNumber</RefColNames>
+    </foreign-key>
+    <foreign-key id="100" parent="18" name="FK47DAEAF5CBB4EC4E">
+      <ColNames>courseNumber</ColNames>
+      <RefSchemaName>db-ssm</RefSchemaName>
+      <RefTableName>t_courseinfo_qq254540457</RefTableName>
+      <RefColNames>courseNumber</RefColNames>
+    </foreign-key>
+    <column id="101" parent="19" name="teacherNumber">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="102" parent="19" name="teacherName">
+      <Position>2</Position>
+      <DataType>varchar(12)|0</DataType>
+    </column>
+    <column id="103" parent="19" name="teacherPassword">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="104" parent="19" name="teacherSex">
+      <Position>4</Position>
+      <DataType>varchar(2)|0</DataType>
+    </column>
+    <column id="105" parent="19" name="teacherBirthday">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="106" parent="19" name="teacherArriveDate">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="107" parent="19" name="teacherCardNumber">
+      <Position>7</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="108" parent="19" name="teacherPhone">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="109" parent="19" name="teacherPhoto">
+      <Position>9</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="110" parent="19" name="teacherAddress">
+      <Position>10</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="111" parent="19" name="teacherMemo">
+      <Position>11</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="112" parent="19" name="PRIMARY">
+      <ColNames>teacherNumber</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="113" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="114" parent="20" name="username">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="20" name="password">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="116" parent="20" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

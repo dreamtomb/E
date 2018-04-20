@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	<!-- <context:component-scan base-package="com.shuangyulin.action"/>  -->
+    <bean id="loginAction" class="com.shuangyulin.action.LoginAction" scope="prototype"></bean>
+    <bean id="changePasswordAction" class="com.shuangyulin.action.ChangePasswordAction" scope="prototype"></bean>
+    <bean id="userAction" class="com.shuangyulin.action.UserAction" scope="prototype"></bean>  
+    
+	
+    <bean id="collegeInfoAction" class="com.shuangyulin.action.CollegeInfoAction" scope="prototype"></bean>
+    <bean id="specialFieldInfoAction" class="com.shuangyulin.action.SpecialFieldInfoAction" scope="prototype"></bean>
+    <bean id="classInfoAction" class="com.shuangyulin.action.ClassInfoAction" scope="prototype"></bean>
+    <bean id="student_QQ287307421Action" class="com.shuangyulin.action.Student_QQ287307421Action" scope="prototype"></bean>
+    <bean id="teacher_QQ287307421Action" class="com.shuangyulin.action.Teacher_QQ287307421Action" scope="prototype"></bean>
+    <bean id="courseInfo_QQ254540457Action" class="com.shuangyulin.action.CourseInfo_QQ254540457Action" scope="prototype"></bean>
+    <bean id="studentSelectCourseInfoAction" class="com.shuangyulin.action.StudentSelectCourseInfoAction" scope="prototype"></bean>
+    <bean id="scoreInfoAction" class="com.shuangyulin.action.ScoreInfoAction" scope="prototype"></bean>
+    <bean id="newsAction" class="com.shuangyulin.action.NewsAction" scope="prototype"></bean>
+ 
+	
+	  
+</beans>

@@ -1,0 +1,6 @@
+﻿  compile.cpp
+f:\c_plusplus_project\compile\compile\compile.cpp(433): warning C4018: “<”: 有符号/无符号不匹配
+f:\c_plusplus_project\compile\compile\compile.cpp(576): warning C4018: “<”: 有符号/无符号不匹配
+f:\c_plusplus_project\compile\compile\compile.cpp(186): warning C4172: 返回局部变量或临时变量的地址: buf
+f:\c_plusplus_project\compile\compile\compile.cpp(176): warning C4715: “IsE”: 不是所有的控件路径都返回值
+  compile.vcxproj -> F:\c_plusplus_project\compile\Debug\compile.exe

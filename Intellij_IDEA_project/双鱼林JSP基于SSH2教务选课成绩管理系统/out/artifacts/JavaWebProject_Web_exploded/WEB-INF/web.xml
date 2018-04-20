@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	
+	
+	<!-- 指定spring的配置文件，默认从web根目录寻找配置文件，我们可以通过spring提供的classpath:前缀指定从类路径下寻找 -->
+	<context-param>
+	   <param-name>contextConfigLocation</param-name>
+	   <param-value>classpath:beans.xml</param-value>
+	</context-param>
+	
+	
+	<!-- 对Spring容器进行实例化 -->
+	<listener>
+	      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<filter>
+        <filter-name>struts2</filter-name>
+        <!-- 
+        <filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+  -->
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+      
+    </filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>*.action</url-pattern>
+    </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

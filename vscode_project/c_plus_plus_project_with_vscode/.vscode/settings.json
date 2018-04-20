@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
+}

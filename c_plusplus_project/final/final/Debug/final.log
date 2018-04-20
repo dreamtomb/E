@@ -1,0 +1,6 @@
+﻿  final.cpp
+f:\c_plusplus_project\final\final\final.cpp(321): warning C4018: “<”: 有符号/无符号不匹配
+f:\c_plusplus_project\final\final\final.cpp(448): warning C4018: “<”: 有符号/无符号不匹配
+f:\c_plusplus_project\final\final\final.cpp(171): warning C4172: 返回局部变量或临时变量的地址: buf
+f:\c_plusplus_project\final\final\final.cpp(161): warning C4715: “IsE”: 不是所有的控件路径都返回值
+  final.vcxproj -> F:\c_plusplus_project\final\Debug\final.exe

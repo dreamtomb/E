@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.shuangyulin.domain">
+
+	<class name="CollegeInfo" table="t_CollegeInfo">
+
+          <!-- 主键学院编号 -->
+          <id name="collegeNumber" type="string" length="20">
+            <generator class="assigned"/>
+          </id>
+
+          <!-- 简单字符串属性: 学院名称 -->
+          <property
+            name="collegeName"
+            column="collegeName"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单日期型属性: 成立日期 -->
+          <property
+            name="collegeBirthDate"
+            column="collegeBirthDate"
+            	type="string"
+            	length="10"
+          />
+
+          <!-- 简单字符串属性: 院长姓名 -->
+          <property
+            name="collegeMan"
+            column="collegeMan"
+            type="string"
+            length="10"
+          />
+
+          <!-- 简单字符串属性: 联系电话 -->
+          <property
+            name="collegeTelephone"
+            column="collegeTelephone"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 附加信息 -->
+          <property
+            name="collegeMemo"
+            column="collegeMemo"
+            type="string"
+            length="100"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

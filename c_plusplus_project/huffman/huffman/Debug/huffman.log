@@ -1,0 +1,28 @@
+﻿生成启动时间为 2017/4/24 16:24:49。
+     1>项目“F:\2010解决方案\huffman\huffman\huffman.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\huffman.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         F:\Visual Studio 2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt huffman.cpp
+         huffman.cpp
+     1>f:\2010解决方案\huffman\huffman\huffman.cpp(154): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\visual studio 2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>f:\2010解决方案\huffman\huffman\huffman.cpp(89): warning C4101: “p”: 未引用的局部变量
+     1>f:\2010解决方案\huffman\huffman\huffman.cpp(86): warning C4101: “s2”: 未引用的局部变量
+     1>f:\2010解决方案\huffman\huffman\huffman.cpp(86): warning C4101: “s1”: 未引用的局部变量
+       Link:
+         F:\Visual Studio 2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\2010解决方案\huffman\Debug\huffman.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\huffman.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\2010解决方案\huffman\Debug\huffman.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\2010解决方案\huffman\Debug\huffman.lib" /MACHINE:X86 Debug\compress.obj
+         Debug\huffman.obj
+         Debug\main.obj
+         LINK : 没有找到 F:\2010解决方案\huffman\Debug\huffman.exe 或上一个增量链接没有生成它；正在执行完全链接
+         huffman.vcxproj -> F:\2010解决方案\huffman\Debug\huffman.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\2010解决方案\huffman\Debug\huffman.exe;#1" /manifest Debug\huffman.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\huffman.unsuccessfulbuild”。
+         正在对“Debug\huffman.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\2010解决方案\huffman\huffman\huffman.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.57

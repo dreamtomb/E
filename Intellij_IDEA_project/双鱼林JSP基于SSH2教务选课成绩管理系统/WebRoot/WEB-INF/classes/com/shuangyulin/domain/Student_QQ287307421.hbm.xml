@@ -1,0 +1,117 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.shuangyulin.domain">
+
+	<class name="Student_QQ287307421" table="t_Student_QQ287307421">
+
+          <!-- 主键学号 -->
+          <id name="studentNumber" type="string" length="20">
+            <generator class="assigned"/>
+          </id>
+
+          <!-- 简单字符串属性: 姓名 -->
+          <property
+            name="studentName"
+            column="studentName"
+            type="string"
+            length="12"
+          />
+
+          <!-- 简单字符串属性: 登录密码 -->
+          <property
+            name="studentPassword"
+            column="studentPassword"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单字符串属性: 性别 -->
+          <property
+            name="studentSex"
+            column="studentSex"
+            type="string"
+            length="2"
+          />
+
+          <!-- 多对一属性: 所在班级 -->
+          <many-to-one name="studentClassNumber"
+            column="studentClassNumber"
+            class="ClassInfo"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单日期型属性: 出生日期 -->
+          <property
+            name="studentBirthday"
+            column="studentBirthday"
+            	type="string"
+            	length="10"
+          />
+
+          <!-- 简单字符串属性: 政治面貌 -->
+          <property
+            name="studentState"
+            column="studentState"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单图片属性: 学生照片 -->
+          <property
+            name="studentPhoto"
+            column="studentPhoto"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单字符串属性: 联系电话 -->
+          <property
+            name="studentTelephone"
+            column="studentTelephone"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 学生邮箱 -->
+          <property
+            name="studentEmail"
+            column="studentEmail"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单字符串属性: 联系qq -->
+          <property
+            name="studentQQ"
+            column="studentQQ"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 家庭地址 -->
+          <property
+            name="studentAddress"
+            column="studentAddress"
+            type="string"
+            length="100"
+          />
+
+          <!-- 简单字符串属性: 附加信息 -->
+          <property
+            name="studentMemo"
+            column="studentMemo"
+            type="string"
+            length="100"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

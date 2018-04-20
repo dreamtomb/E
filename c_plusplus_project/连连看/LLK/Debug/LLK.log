@@ -1,0 +1,38 @@
+﻿生成启动时间为 2017/5/27 20:43:39。
+     1>项目“F:\2010解决方案\连连看\LLK\LLK.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\LLK.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         F:\Visual Studio 2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\LLK.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LLKButton.cpp
+         LLKButton.cpp
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         F:\Visual Studio 2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\2010解决方案\连连看\Debug\LLK.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\LLK.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\2010解决方案\连连看\Debug\LLK.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\2010解决方案\连连看\Debug\LLK.lib" /MACHINE:X86 Debug\LLK.res
+         Debug\LLK.exe.embed.manifest.res
+         Debug\HelpDialog.obj
+         Debug\LLK.obj
+         Debug\LLKAddDlg.obj
+         Debug\LLKButton.obj
+         Debug\LLKDlg.obj
+         Debug\LLKLevelModel.obj
+         Debug\LLKRecordDlg.obj
+         Debug\LLKSetting.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\LLK.exe.embed.manifest" /manifest Debug\LLK.exe.intermediate.manifest "F:\Visual Studio 2010\VC\Include\Manifest\dpiaware.manifest"
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         LLK.vcxproj -> F:\2010解决方案\连连看\Debug\LLK.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\LLK.unsuccessfulbuild”。
+         正在对“Debug\LLK.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\2010解决方案\连连看\LLK\LLK.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.45

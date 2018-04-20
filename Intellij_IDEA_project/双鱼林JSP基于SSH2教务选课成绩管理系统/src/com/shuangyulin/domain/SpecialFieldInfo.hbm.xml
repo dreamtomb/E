@@ -1,0 +1,69 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.shuangyulin.domain">
+
+	<class name="SpecialFieldInfo" table="t_SpecialFieldInfo">
+
+          <!-- 主键专业编号 -->
+          <id name="specialFieldNumber" type="string" length="20">
+            <generator class="assigned"/>
+          </id>
+
+          <!-- 简单字符串属性: 专业名称 -->
+          <property
+            name="specialFieldName"
+            column="specialFieldName"
+            type="string"
+            length="20"
+          />
+
+          <!-- 多对一属性: 所在学院 -->
+          <many-to-one name="specialCollegeNumber"
+            column="specialCollegeNumber"
+            class="CollegeInfo"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单日期型属性: 成立日期 -->
+          <property
+            name="specialBirthDate"
+            column="specialBirthDate"
+            	type="string"
+            	length="10"
+          />
+
+          <!-- 简单字符串属性: 联系人 -->
+          <property
+            name="specialMan"
+            column="specialMan"
+            type="string"
+            length="10"
+          />
+
+          <!-- 简单字符串属性: 联系电话 -->
+          <property
+            name="specialTelephone"
+            column="specialTelephone"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 附加信息 -->
+          <property
+            name="specialMemo"
+            column="specialMemo"
+            type="string"
+            length="100"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

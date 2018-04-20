@@ -1,0 +1,287 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>test</title><meta name="generator" content="MATLAB 8.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2017-04-08"><meta name="DC.source" content="test.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">&#20363;4.1 &#36890;&#36807;&#36951;&#20256;&#31639;&#27861;&#27714;&#35299;&#22914;&#19979;&#22810;&#20803;&#20989;&#25968;&#65306;</a></li><li><a href="#2">&#20989;&#25968;&#20027;&#20307;&#24320;&#22987;     &#20934;&#22791;&#38454;&#27573;</a></li><li><a href="#3">&#20248;&#21270;&#38454;&#27573;</a></li></ul></div><h2>&#20363;4.1 &#36890;&#36807;&#36951;&#20256;&#31639;&#27861;&#27714;&#35299;&#22914;&#19979;&#22810;&#20803;&#20989;&#25968;&#65306;<a name="1"></a></h2><pre>  max f&#65288;x1&#65292;x2&#65289;=21.5+x1sin&#65288;4&#960;x1&#65289;+x2sin&#65288;20&#960;x2&#65289;
+  &#20854;&#20013;     -3&lt;x1&lt;12.1
+             4.1&lt;x2&lt;5.8</pre><pre class="codeinput">clc
+clear
+close
+clc
+<span class="comment">%&#21442;&#25968;&#35774;&#32622;</span>
+<span class="comment">% lbx=-3;</span>
+<span class="comment">% ubx=12.1;</span>
+<span class="comment">% lby=4.1;</span>
+<span class="comment">% uby=5.8;</span>
+ lbx=-2;
+ubx=2;
+lby=-2;
+uby=2;
+figure(1);
+<span class="comment">%ezmesh('21.5+x*sin(4*pi*x)+y*sin(20*pi*y)',[lbx,ubx,lby,uby],50);</span>
+ezmesh(<span class="string">'y*sin(2*pi*x)+x*cos(2*pi*y)'</span>,[lbx,ubx,lby,uby],50);
+</pre><img vspace="5" hspace="5" src="test_01.png" alt=""> <h2>&#20989;&#25968;&#20027;&#20307;&#24320;&#22987;     &#20934;&#22791;&#38454;&#27573;<a name="2"></a></h2><pre class="codeinput"><span class="comment">%&#23450;&#20041;&#31639;&#27861;&#30340;&#21442;&#25968;&#20540;</span>
+NIND=40;<span class="comment">%&#31181;&#32676;&#22823;&#23567;</span>
+PRECI=50;<span class="comment">%&#20010;&#20307;&#38271;&#24230;</span>
+MAXGEN=20;<span class="comment">%&#26368;&#22823;&#36951;&#20256;&#20195;&#25968;</span>
+GGAP=0.95;<span class="comment">%&#20195;&#27807;</span>
+px=0.7;<span class="comment">%&#20132;&#21449;&#27010;&#29575;</span>
+pm=0.01;<span class="comment">%&#21464;&#24322;&#27010;&#29575;</span>
+trace=zeros(3,MAXGEN);<span class="comment">%&#29992;&#20110;&#23384;&#25918;&#23547;&#20248;&#32467;&#26524;</span>
+
+<span class="comment">%&#21306;&#22495;&#25551;&#36848;&#22120;</span>
+FieldD=[PRECI PRECI;lbx lby;ubx uby;1 1;0 0;1 1;1 1];
+<span class="comment">%FieldD&#30340;&#21442;&#25968;&#20998;&#21035;&#26159;&#20010;&#20307;&#38271;&#24230;&#65292;&#20010;&#20307;&#30340;&#19978;&#19979;&#30028;,&#20010;&#20307;&#30340;&#32534;&#30721;&#26041;&#24335;&#65292;</span>
+<span class="comment">%&#20351;&#29992;&#30340;&#21051;&#24230;&#20197;&#21450;&#26159;&#21542;&#21253;&#21547;&#20004;&#20010;&#36793;&#30028;</span>
+
+<span class="comment">%NIND&#26159;&#31181;&#32676;&#20010;&#20307;&#25968;,PRECI&#26159;&#20010;&#20307;&#38271;&#24230;,Chrom&#20013;&#27599;&#19968;&#20010;&#20010;&#20307;&#21069;50&#20301;&#26159;x,&#21518;50&#20301;&#26159;Y.</span>
+[Chrom,Lind,BaseV]=crtbp(NIND,PRECI*2);
+</pre><h2>&#20248;&#21270;&#38454;&#27573;<a name="3"></a></h2><pre class="codeinput">gen=0;
+
+<span class="comment">%&#35299;&#30721;</span>
+XY=bs2rv(Chrom,FieldD);
+X=XY(:,1);
+Y=XY(:,2);
+
+<span class="comment">%&#30446;&#26631;&#20989;&#25968;&#20540;</span>
+<span class="comment">% ObjV=21.5+X.*sin(4*pi*X)+Y.*sin(20*pi*Y);</span>
+ObjV=Y.*sin(2*pi*X)+X.*cos(2*pi*Y);
+
+<span class="keyword">while</span> gen&lt;MAXGEN
+    <span class="comment">%&#35745;&#31639;&#36866;&#24212;&#24230;</span>
+    FitnV=ranking(ObjV);<span class="comment">%&#29992;&#21313;&#36827;&#21046;&#25968;&#26469;&#36827;&#34892;&#36866;&#24212;&#24230;&#35780;&#20215;</span>
+    <span class="comment">%&#36873;&#25321;</span>
+    SelCh=select(<span class="string">'sus'</span>,Chrom,FitnV,GGAP);
+    <span class="comment">%&#20132;&#21449;</span>
+    SelCh=recombin(<span class="string">'xovsp'</span>,SelCh,px);
+    <span class="comment">%&#21464;&#24322;</span>
+    SelCh=mut(SelCh,pm);
+    <span class="comment">%&#23376;&#20195;&#30340;&#30446;&#26631;&#20989;&#25968;&#20540;</span>
+    XY=bs2rv(SelCh,FieldD);
+    X=XY(:,1);
+    Y=XY(:,2);
+
+    <span class="comment">%&#23376;&#20195;&#30340;&#30446;&#26631;&#20989;&#25968;&#20540;</span>
+    <span class="comment">%ObjVSel=21.5+X.*sin(4*pi*X)+Y.*sin(20*pi*Y);</span>
+    ObjVSel=Y.*sin(2*pi*X)+X.*cos(2*pi*Y);
+
+    <span class="comment">%&#23558;&#23376;&#20195;&#20010;&#20307;&#25554;&#20837;&#29238;&#20195;&#20010;&#20307;</span>
+    [Chrom,ObjV]=reins(Chrom,SelCh,1,1,ObjV,ObjVSel);
+    XY=bs2rv(Chrom,FieldD);
+    gen=gen+1;
+
+    <span class="comment">%&#33719;&#21462;&#26368;&#20248;&#35299;&#30340;&#20195;&#21495;&#21450;&#20854;&#20540;,&#20854;&#20013;y&#20026;&#26368;&#20248;&#35299;&#65292;i&#20026;&#24207;&#21495;</span>
+    [Y,I]=max(ObjV);
+    <span class="comment">%&#35760;&#24405;</span>
+    trace(1:2,gen)=XY(I,:);
+    trace(3,gen)=Y;
+<span class="keyword">end</span>
+
+figure(2);
+plot3(trace(1,:),trace(2,:),trace(3,:),<span class="string">'bo'</span>);
+hold <span class="string">on</span>;
+grid <span class="string">on</span>;
+plot3(XY(:,1),XY(:,2),ObjV,<span class="string">'r*'</span>);
+hold <span class="string">off</span>;
+
+figure(3)
+plot(1:MAXGEN,trace(3,:));
+grid <span class="string">on</span>
+xlabel(<span class="string">'&#36951;&#20256;&#20195;&#25968;&#65306;'</span>);
+ylabel(<span class="string">'&#30028;&#30340;&#21464;&#21270;&#65306;'</span>);
+title(<span class="string">'&#36827;&#21270;&#36807;&#31243;&#65306;'</span>);
+
+<span class="comment">% bestZ=trace(3,end);</span>
+<span class="comment">% bestX=trace(1,end);</span>
+<span class="comment">% bestY=trace(2,end);</span>
+bestZ=max(trace(3,:));
+bestX=max(trace(1,:));
+bestY=max(trace(2,:));
+disp(<span class="string">'&#26368;&#20248;&#35299;&#65306;X='</span>);
+disp(num2str(bestX));
+disp(<span class="string">'Y='</span>);
+disp(num2str(bestY));
+disp(<span class="string">'Z='</span>);
+disp(num2str(bestZ));
+</pre><pre class="codeoutput">&#26368;&#20248;&#35299;&#65306;X=
+1.7828
+Y=
+1.9905
+Z=
+3.7305
+</pre><img vspace="5" hspace="5" src="test_02.png" alt=""> <img vspace="5" hspace="5" src="test_03.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% 例4.1 通过遗传算法求解如下多元函数：
+%    max f（x1，x2）=21.5+x1sin（4πx1）+x2sin（20πx2）
+%    其中     -3<x1<12.1
+%               4.1<x2<5.8
+clc
+clear
+close
+clc
+%参数设置
+% lbx=-3;
+% ubx=12.1;
+% lby=4.1;
+% uby=5.8;
+ lbx=-2;
+ubx=2;
+lby=-2;
+uby=2;
+figure(1);
+%ezmesh('21.5+x*sin(4*pi*x)+y*sin(20*pi*y)',[lbx,ubx,lby,uby],50);
+ezmesh('y*sin(2*pi*x)+x*cos(2*pi*y)',[lbx,ubx,lby,uby],50);
+
+%%  函数主体开始     准备阶段
+
+%定义算法的参数值
+NIND=40;%种群大小
+PRECI=50;%个体长度
+MAXGEN=20;%最大遗传代数
+GGAP=0.95;%代沟
+px=0.7;%交叉概率
+pm=0.01;%变异概率
+trace=zeros(3,MAXGEN);%用于存放寻优结果
+
+%区域描述器
+FieldD=[PRECI PRECI;lbx lby;ubx uby;1 1;0 0;1 1;1 1];
+%FieldD的参数分别是个体长度，个体的上下界,个体的编码方式，
+%使用的刻度以及是否包含两个边界
+
+%NIND是种群个体数,PRECI是个体长度,Chrom中每一个个体前50位是x,后50位是Y.
+[Chrom,Lind,BaseV]=crtbp(NIND,PRECI*2);
+
+%% 优化阶段
+gen=0;
+
+%解码
+XY=bs2rv(Chrom,FieldD);
+X=XY(:,1);
+Y=XY(:,2);
+
+%目标函数值
+% ObjV=21.5+X.*sin(4*pi*X)+Y.*sin(20*pi*Y);
+ObjV=Y.*sin(2*pi*X)+X.*cos(2*pi*Y);
+
+while gen<MAXGEN
+    %计算适应度
+    FitnV=ranking(ObjV);%用十进制数来进行适应度评价
+    %选择
+    SelCh=select('sus',Chrom,FitnV,GGAP);
+    %交叉
+    SelCh=recombin('xovsp',SelCh,px);
+    %变异
+    SelCh=mut(SelCh,pm);
+    %子代的目标函数值
+    XY=bs2rv(SelCh,FieldD);
+    X=XY(:,1);
+    Y=XY(:,2);
+
+    %子代的目标函数值
+    %ObjVSel=21.5+X.*sin(4*pi*X)+Y.*sin(20*pi*Y);
+    ObjVSel=Y.*sin(2*pi*X)+X.*cos(2*pi*Y);
+    
+    %将子代个体插入父代个体
+    [Chrom,ObjV]=reins(Chrom,SelCh,1,1,ObjV,ObjVSel);
+    XY=bs2rv(Chrom,FieldD);
+    gen=gen+1;
+   
+    %获取最优解的代号及其值,其中y为最优解，i为序号
+    [Y,I]=max(ObjV);
+    %记录
+    trace(1:2,gen)=XY(I,:);
+    trace(3,gen)=Y;
+end
+
+figure(2);
+plot3(trace(1,:),trace(2,:),trace(3,:),'bo');
+hold on;
+grid on;
+plot3(XY(:,1),XY(:,2),ObjV,'r*');
+hold off;
+
+figure(3)
+plot(1:MAXGEN,trace(3,:));
+grid on
+xlabel('遗传代数：');
+ylabel('界的变化：');
+title('进化过程：');
+
+% bestZ=trace(3,end);
+% bestX=trace(1,end);
+% bestY=trace(2,end);
+bestZ=max(trace(3,:));
+bestX=max(trace(1,:));
+bestY=max(trace(2,:));
+disp('最优解：X=');
+disp(num2str(bestX));
+disp('Y=');
+disp(num2str(bestY));
+disp('Z=');
+disp(num2str(bestZ));
+##### SOURCE END #####
+--></body></html>

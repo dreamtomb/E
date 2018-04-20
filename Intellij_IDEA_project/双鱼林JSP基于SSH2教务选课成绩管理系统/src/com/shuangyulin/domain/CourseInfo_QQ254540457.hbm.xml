@@ -1,0 +1,68 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.shuangyulin.domain">
+
+	<class name="CourseInfo_QQ254540457" table="t_CourseInfo_QQ254540457">
+
+          <!-- 主键课程编号 -->
+          <id name="courseNumber" type="string" length="20">
+            <generator class="assigned"/>
+          </id>
+
+          <!-- 简单字符串属性: 课程名称 -->
+          <property
+            name="courseName"
+            column="courseName"
+            type="string"
+            length="20"
+          />
+
+          <!-- 多对一属性: 上课老师 -->
+          <many-to-one name="courseTeacher"
+            column="courseTeacher"
+            class="Teacher_QQ287307421"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单字符串属性: 上课时间 -->
+          <property
+            name="courseTime"
+            column="courseTime"
+            type="string"
+            length="40"
+          />
+
+          <!-- 简单字符串属性: 上课地点 -->
+          <property
+            name="coursePlace"
+            column="coursePlace"
+            type="string"
+            length="40"
+          />
+
+          <!-- 简单浮点型属性: 课程学分 -->
+          <property
+            name="courseScore"
+            column="courseScore"
+            type="float"
+          />
+
+          <!-- 简单字符串属性: 附加信息 -->
+          <property
+            name="courseMemo"
+            column="courseMemo"
+            type="string"
+            length="100"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

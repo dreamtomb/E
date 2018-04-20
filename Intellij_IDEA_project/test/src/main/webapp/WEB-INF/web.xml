@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <!--配置过滤器及其映射-->
+    <filter>
+        <filter-name>encoding</filter-name>
+        <filter-class>wt.filter.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--配置servelet及其映射关系-->
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>JxlServlet</servlet-name>
+        <servlet-class>wt.controller.JxlServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>CourseServlet</servlet-name>
+        <servlet-class>wt.controller.CourseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>LoginCheckServlet</servlet-name>
+        <servlet-class>wt.controller.LoginCheckServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ChangeCodeServlet</servlet-name>
+        <servlet-class>wt.controller.ChangeCodeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ScoreServlet</servlet-name>
+        <servlet-class>wt.controller.ScoreServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>StuCourServlet</servlet-name>
+        <servlet-class>wt.controller.StuCourServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>wt.controller.StudentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>TeaCourServlet</servlet-name>
+        <servlet-class>wt.controller.TeaCourServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>TeacherServlet</servlet-name>
+        <servlet-class>wt.controller.TeacherServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>MessageServlet</servlet-name>
+        <servlet-class>wt.controller.MessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JxlServlet</servlet-name>
+        <url-pattern>/JxlServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern>/CourseServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginCheckServlet</servlet-name>
+        <url-pattern>/LoginCheckServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangeCodeServlet</servlet-name>
+        <url-pattern>/ChangeCodeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ScoreServlet</servlet-name>
+        <url-pattern>/ScoreServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StuCourServlet</servlet-name>
+        <url-pattern>/StuCourServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/StudentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TeaCourServlet</servlet-name>
+        <url-pattern>/TeaCourServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TeacherServlet</servlet-name>
+        <url-pattern>/TeacherServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MessageServlet</servlet-name>
+        <url-pattern>/MessageServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--设置欢迎页-->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+</web-app>

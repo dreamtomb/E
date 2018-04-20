@@ -1,0 +1,100 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.shuangyulin.domain">
+
+	<class name="Teacher_QQ287307421" table="t_Teacher_QQ287307421">
+
+          <!-- 主键教师编号 -->
+          <id name="teacherNumber" type="string" length="20">
+            <generator class="assigned"/>
+          </id>
+
+          <!-- 简单字符串属性: 教师姓名 -->
+          <property
+            name="teacherName"
+            column="teacherName"
+            type="string"
+            length="12"
+          />
+
+          <!-- 简单字符串属性: 登录密码 -->
+          <property
+            name="teacherPassword"
+            column="teacherPassword"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单字符串属性: 性别 -->
+          <property
+            name="teacherSex"
+            column="teacherSex"
+            type="string"
+            length="2"
+          />
+
+          <!-- 简单日期型属性: 出生日期 -->
+          <property
+            name="teacherBirthday"
+            column="teacherBirthday"
+            	type="string"
+            	length="10"
+          />
+
+          <!-- 简单日期型属性: 入职日期 -->
+          <property
+            name="teacherArriveDate"
+            column="teacherArriveDate"
+            	type="string"
+            	length="10"
+          />
+
+          <!-- 简单字符串属性: 身份证号 -->
+          <property
+            name="teacherCardNumber"
+            column="teacherCardNumber"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 联系电话 -->
+          <property
+            name="teacherPhone"
+            column="teacherPhone"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单图片属性: 教师照片 -->
+          <property
+            name="teacherPhoto"
+            column="teacherPhoto"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单字符串属性: 家庭地址 -->
+          <property
+            name="teacherAddress"
+            column="teacherAddress"
+            type="string"
+            length="100"
+          />
+
+          <!-- 简单字符串属性: 附加信息 -->
+          <property
+            name="teacherMemo"
+            column="teacherMemo"
+            type="string"
+            length="100"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

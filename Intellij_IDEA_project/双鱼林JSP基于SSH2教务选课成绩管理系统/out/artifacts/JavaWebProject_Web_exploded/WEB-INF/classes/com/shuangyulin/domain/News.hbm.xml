@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.shuangyulin.domain">
+
+	<class name="News" table="t_News">
+
+          <!-- 主键记录编号 -->
+          <id name="newsId" column="newsId">
+            <generator class="native"/>
+          </id>
+
+          <!-- 简单字符串属性: 新闻标题 -->
+          <property
+            name="newsTitle"
+            column="newsTitle"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单字符串属性: 新闻内容 -->
+          <property
+            name="newsContent"
+            column="newsContent"
+            type="string"
+            length="500"
+          />
+
+          <!-- 简单日期型属性: 发布日期 -->
+          <property
+            name="newsDate"
+            column="newsDate"
+            	type="string"
+            	length="10"
+          />
+
+          <!-- 简单图片属性: 新闻图片 -->
+          <property
+            name="newsPhoto"
+            column="newsPhoto"
+            type="string"
+            length="50"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 
